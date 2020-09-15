@@ -1,5 +1,4 @@
 FROM ubuntu:artful
-MAINTAINER Antoine Millet <antoine.millet@enix.fr>
 
 RUN apt update && apt install -y python3-lxml python3-prometheus-client python3-requests
 COPY msa_exporter.py /bin/msa_exporter
