@@ -1,7 +1,7 @@
 FROM ubuntu:xenial
 
 RUN apt update && apt install -y python3-lxml python3-pip python3-requests
-RUN python3 -m pip install -y prometheus-client
+RUN python3 -m pip install prometheus-client
 
 COPY msa_exporter.py /bin/msa_exporter
 RUN chmod +x /bin/msa_exporter
