@@ -1,4 +1,4 @@
-FROM ubuntu:artful
+FROM ubuntu:xenial
 
 RUN apt update && apt install -y python3-lxml python3-prometheus-client python3-requests
 COPY msa_exporter.py /bin/msa_exporter
